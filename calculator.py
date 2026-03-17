@@ -129,6 +129,7 @@ button_div = tk.Button(
 )
 output_label = tk.Label(root, text="", font=("Arial", 14))
 output_label.pack()
+""" 
 button_0.pack(pady=("1"))
 button_1.pack(pady=("1"))
 button_2.pack(pady=("1"))
@@ -141,9 +142,20 @@ button_7.pack(pady=("1"))
 button_8.pack(pady=("1"))
 button_9.pack(pady=("1"))
 button_10.pack(pady=("1"))
+"""
+
+
+
+
+for i in range(10):
+    button = tk.Button(
+    root,
+    text= i,
+    command= lambda x=i: enter_number(x),
+).pack(pady="1")
+
 button_add.pack(pady=("1"))
 button_sub.pack(pady=("1"))
 button_times.pack(pady=("1"))
 button_div.pack(pady=("1"))
-
 root.mainloop()
